@@ -1,5 +1,5 @@
 <?php
-namespace Fir\ImageVerificationCode\Facades;
+namespace Fir\ImageVerificationCode;
 
 class Facades extends Illuminate\Support\Facades\Facade{
 
