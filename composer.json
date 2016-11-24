@@ -16,7 +16,5 @@
             "Fir\\ImageVerificationCode\\": "src/"
         },
         "files": []
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }

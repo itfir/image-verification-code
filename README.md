@@ -7,5 +7,9 @@
 2、App\Http\Kernel.php $middlewareGroups 内配置 \Fir\ImageVerificationCode\Middleware\ImageVerificationCode::class,;
 3、使用方法
 在需要图片验证码的表单内配置
-<input name="ImageVerificationCode" value="{{ old('ImageVerificationCode') }}">
-<img onclick="this.src='{{ route('ImageVerificationCode.Generate') }}?'+Math.random()" src="{{ route('ImageVerificationCode.Generate') }}">
+<form>
+    {{session('ImageVerificationCodeError')}}
+    <input name="ImageVerificationCode" value="{{ old('ImageVerificationCode') }}">
+    <img onclick="this.src='{{ route('ImageVerificationCode.Generate') }}?'+Math.random()" src="{{ route('ImageVerificationCode.Generate') }}">
+    <button>提交</button>
+</form>
