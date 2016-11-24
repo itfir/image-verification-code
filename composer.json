@@ -1,0 +1,20 @@
+{
+    "name": "fir/image-verification-code",
+    "description": "图片验证码",
+    "authors": [
+        {
+            "name": "fir",
+            "email": "375312675@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": "5.1.*|5.2.*|5.3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fir\\ImageVerificationCode\\": "src/"
+        },
+        "files": []
+    }
+}
